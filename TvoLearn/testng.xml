@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TvoLearn" parallel="tests" thread-count="6">
+	<listeners>
+		<listener class-name="tvo.tvoLearn.Listeners"></listener>
+	</listeners>
+
+<!-- For Parallel Testing 	
+	<test name="SubjectTestModuleonFirefox">
+		<parameter name="browserName" value="firefox"></parameter>
+		<classes>
+			<class name="tvo.tvoLearn.HomePageTest" />
+			<class name="tvo.tvoLearn.ElementaryGradeHomePageTest" />
+			<class name="tvo.tvoLearn.SubjectPageTest" />
+
+		</classes>
+	</test> 
+	
+	-->
+	<!--Test -->
+	
+	<test name="SubjectTestModuleOnChrome">
+		<parameter name="browserName" value="chrome"></parameter>
+		<classes>
+			<class name="tvo.tvoLearn.HomePageTest" />
+			<class name="tvo.tvoLearn.ElementaryGradeHomePageTest" />
+			<class name="tvo.tvoLearn.SubjectPageTest" />
+
+		</classes>
+	</test> <!--Test -->
+
+
+
+</suite> <!--Suite -->
