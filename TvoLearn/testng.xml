@@ -4,7 +4,15 @@
 	<listeners>
 		<listener class-name="tvo.tvoLearn.Listeners"></listener>
 	</listeners>
-
+		
+	<test name="SubjectTestModuleOnChrome">
+		<classes>
+			<class name="tvo.tvoLearn.HomePageTest" />
+			<class name="tvo.tvoLearn.ElementaryGradeHomePageTest" />
+			<class name="tvo.tvoLearn.SubjectPageTest" />
+		</classes>
+	</test> 
+	
 <!-- For Parallel Testing 	
 	<test name="SubjectTestModuleonFirefox">
 		<parameter name="browserName" value="firefox"></parameter>
@@ -15,10 +23,6 @@
 
 		</classes>
 	</test> 
-	
-	-->
-	<!--Test -->
-	
 	<test name="SubjectTestModuleOnChrome">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
@@ -27,7 +31,9 @@
 			<class name="tvo.tvoLearn.SubjectPageTest" />
 
 		</classes>
-	</test> <!--Test -->
+	</test> 
+	-->
+
 
 
 

@@ -5,14 +5,11 @@
     <listener class-name="tvo.tvoLearn.Listeners"/>
   </listeners>
   <test thread-count="6" parallel="tests" name="SubjectTestModuleOnChrome(failed)" verbose="0">
-    <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="tvo.tvoLearn.SubjectPageTest">
         <methods>
-          <include name="resourcesForLearningLinkIsWorking"/>
           <include name="teardown"/>
-          <include name="resourcesForLearningLinkIsNotWorking"/>
-          <include name="doSubscribeWithCorrectEmailFormat"/>
+          <include name="resourcesForLearningLinksAreWorking"/>
           <include name="initializeDriver"/>
         </methods>
       </class> <!-- tvo.tvoLearn.SubjectPageTest -->

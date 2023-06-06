@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="6" failed="3" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-05T17:44:12 EDT" name="TvoLearn" finished-at="2023-06-05T17:45:43 EDT" duration-ms="91732">
+  <suite started-at="2023-06-06T02:35:52 EDT" name="Default suite" finished-at="2023-06-06T02:36:14 EDT" duration-ms="21414">
     <groups>
     </groups>
-    <test started-at="2023-06-05T17:44:12 EDT" name="SubjectTestModuleOnChrome" finished-at="2023-06-05T17:45:43 EDT" duration-ms="91732">
+    <test started-at="2023-06-06T02:35:52 EDT" name="Default test" finished-at="2023-06-06T02:36:14 EDT" duration-ms="21414">
       <class name="tvo.tvoLearn.SubjectPageTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:29 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:32 EDT" duration-ms="3371" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:35:52 EDT" name="initializeDriver" finished-at="2023-06-06T02:35:56 EDT" duration-ms="3698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="doSubscribeWithCorrectEmailFormat()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:32 EDT" name="doSubscribeWithCorrectEmailFormat" finished-at="2023-06-05T17:44:39 EDT" duration-ms="6957" status="FAIL">
+        <test-method signature="doSubscribeWithCorrectEmailFormat()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:35:56 EDT" name="doSubscribeWithCorrectEmailFormat" finished-at="2023-06-06T02:35:58 EDT" duration-ms="2531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doSubscribeWithCorrectEmailFormat -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:35:58 EDT" name="teardown" finished-at="2023-06-06T02:35:59 EDT" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:35:59 EDT" name="initializeDriver" finished-at="2023-06-06T02:36:02 EDT" duration-ms="3044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="doSubscribeWithInvalidEmailFormat()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:02 EDT" name="doSubscribeWithInvalidEmailFormat" finished-at="2023-06-06T02:36:03 EDT" duration-ms="1478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doSubscribeWithInvalidEmailFormat -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:03 EDT" name="teardown" finished-at="2023-06-06T02:36:03 EDT" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:03 EDT" name="initializeDriver" finished-at="2023-06-06T02:36:06 EDT" duration-ms="2996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="resourcesForLearningLinksAreWorking()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:06 EDT" name="resourcesForLearningLinksAreWorking" finished-at="2023-06-06T02:36:09 EDT" duration-ms="2628" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.] but found []]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.] but found []
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at tvo.tvoLearn.SubjectPageTest.doSubscribeWithCorrectEmailFormat(SubjectPageTest.java:74)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tvo.tvoLearn.SubjectPageTest.resourcesForLearningLinksAreWorking(SubjectPageTest.java:74)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -46,304 +61,41 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doSubscribeWithCorrectEmailFormat -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:39 EDT" name="teardown" finished-at="2023-06-05T17:44:40 EDT" duration-ms="177" status="PASS">
+        </test-method> <!-- resourcesForLearningLinksAreWorking -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:09 EDT" name="teardown" finished-at="2023-06-06T02:36:09 EDT" duration-ms="157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:40 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:44 EDT" duration-ms="3925" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:09 EDT" name="initializeDriver" finished-at="2023-06-06T02:36:12 EDT" duration-ms="2860" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="doSubscribeWithInvalidEmailFormat()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:44 EDT" name="doSubscribeWithInvalidEmailFormat" finished-at="2023-06-05T17:44:51 EDT" duration-ms="7034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doSubscribeWithInvalidEmailFormat -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:51 EDT" name="teardown" finished-at="2023-06-05T17:44:51 EDT" duration-ms="156" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:51 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:55 EDT" duration-ms="4400" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="resourcesForLearningLinkIsNotWorking()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:44:55 EDT" name="resourcesForLearningLinkIsNotWorking" finished-at="2023-06-05T17:45:08 EDT" duration-ms="13087" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='block-system-main']/div/div[1]/h1"}
-  (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2bb1d32b5eec7ebb514ca2525a5321cd, findElement {using=xpath, value=//*[@id='block-system-main']/div/div[1]/h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/r9/7h6xd7457bx...}, goog:chromeOptions: {debuggerAddress: localhost:49553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49553/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2bb1d32b5eec7ebb514ca2525a5321cd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='block-system-main']/div/div[1]/h1"}
-  (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2bb1d32b5eec7ebb514ca2525a5321cd, findElement {using=xpath, value=//*[@id='block-system-main']/div/div[1]/h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/r9/7h6xd7457bx...}, goog:chromeOptions: {debuggerAddress: localhost:49553}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49553/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2bb1d32b5eec7ebb514ca2525a5321cd
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at pageObjects.SubjectLandingPage.getContentNotFoundHeader(SubjectLandingPage.java:39)
-at tvo.tvoLearn.SubjectPageTest.resourcesForLearningLinkIsNotWorking(SubjectPageTest.java:47)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resourcesForLearningLinkIsNotWorking -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:09 EDT" name="teardown" finished-at="2023-06-05T17:45:09 EDT" duration-ms="182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:09 EDT" name="initializeDriver" finished-at="2023-06-05T17:45:17 EDT" duration-ms="7885" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="resourcesForLearningLinkIsWorking()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:17 EDT" name="resourcesForLearningLinkIsWorking" finished-at="2023-06-05T17:45:36 EDT" duration-ms="19252" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='block-system-main']/div/div[1]/h1"}
-  (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b00b3db6872cb01dc0539bab1f530c5, findElement {using=xpath, value=//*[@id='block-system-main']/div/div[1]/h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/r9/7h6xd7457bx...}, goog:chromeOptions: {debuggerAddress: localhost:49640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49640/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b00b3db6872cb01dc0539bab1f530c5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='block-system-main']/div/div[1]/h1"}
-  (Session info: chrome=114.0.5735.90)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2b00b3db6872cb01dc0539bab1f530c5, findElement {using=xpath, value=//*[@id='block-system-main']/div/div[1]/h1}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.90, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: /var/folders/r9/7h6xd7457bx...}, goog:chromeOptions: {debuggerAddress: localhost:49640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49640/devtoo..., se:cdpVersion: 114.0.5735.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2b00b3db6872cb01dc0539bab1f530c5
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at pageObjects.SubjectLandingPage.getContentNotFoundHeader(SubjectLandingPage.java:39)
-at tvo.tvoLearn.SubjectPageTest.resourcesForLearningLinkIsWorking(SubjectPageTest.java:56)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resourcesForLearningLinkIsWorking -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:36 EDT" name="teardown" finished-at="2023-06-05T17:45:37 EDT" duration-ms="211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:37 EDT" name="initializeDriver" finished-at="2023-06-05T17:45:41 EDT" duration-ms="4724" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="subjectTitleIsMathematics()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:41 EDT" name="subjectTitleIsMathematics" finished-at="2023-06-05T17:45:43 EDT" duration-ms="1710" status="PASS">
+        <test-method signature="subjectTitleIsMathematics()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:12 EDT" name="subjectTitleIsMathematics" finished-at="2023-06-06T02:36:13 EDT" duration-ms="1405" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- subjectTitleIsMathematics -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@1c7696c6]" started-at="2023-06-05T17:45:43 EDT" name="teardown" finished-at="2023-06-05T17:45:43 EDT" duration-ms="156" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.SubjectPageTest@59505b48]" started-at="2023-06-06T02:36:13 EDT" name="teardown" finished-at="2023-06-06T02:36:14 EDT" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tvo.tvoLearn.SubjectPageTest -->
-      <class name="tvo.tvoLearn.ElementaryGradeHomePageTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.ElementaryGradeHomePageTest@6c1a5b54]" started-at="2023-06-05T17:44:24 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:28 EDT" duration-ms="3755" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="titleIncludesWordGrade()[pri:0, instance:tvo.tvoLearn.ElementaryGradeHomePageTest@6c1a5b54]" started-at="2023-06-05T17:44:28 EDT" name="titleIncludesWordGrade" finished-at="2023-06-05T17:44:29 EDT" duration-ms="726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleIncludesWordGrade -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.ElementaryGradeHomePageTest@6c1a5b54]" started-at="2023-06-05T17:44:29 EDT" name="teardown" finished-at="2023-06-05T17:44:29 EDT" duration-ms="158" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tvo.tvoLearn.ElementaryGradeHomePageTest -->
-      <class name="tvo.tvoLearn.HomePageTest">
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:12 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:16 EDT" duration-ms="4732" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="elementaryHasNineGradeSection()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:16 EDT" name="elementaryHasNineGradeSection" finished-at="2023-06-05T17:44:17 EDT" duration-ms="276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- elementaryHasNineGradeSection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:17 EDT" name="teardown" finished-at="2023-06-05T17:44:17 EDT" duration-ms="166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:17 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:20 EDT" duration-ms="3645" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="navBarHasElementarySection()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:20 EDT" name="navBarHasElementarySection" finished-at="2023-06-05T17:44:21 EDT" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navBarHasElementarySection -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:21 EDT" name="teardown" finished-at="2023-06-05T17:44:21 EDT" duration-ms="112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:21 EDT" name="initializeDriver" finished-at="2023-06-05T17:44:24 EDT" duration-ms="3263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="titleLogoDisplayed()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:24 EDT" name="titleLogoDisplayed" finished-at="2023-06-05T17:44:24 EDT" duration-ms="44" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- titleLogoDisplayed -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tvo.tvoLearn.HomePageTest@771a660]" started-at="2023-06-05T17:44:24 EDT" name="teardown" finished-at="2023-06-05T17:44:24 EDT" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- tvo.tvoLearn.HomePageTest -->
-    </test> <!-- SubjectTestModuleOnChrome -->
-  </suite> <!-- TvoLearn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -23,18 +23,19 @@ public class Base {
 
 	public static WebDriver driver;
 
-	@Parameters("browserName")
+//	@Parameters("browserName")
 	@BeforeMethod()
-	public void initializeDriver(String browserName) throws IOException {
+//	public void initializeDriver(String browserName) throws IOException {
+	public void initializeDriver() throws IOException {
 		Properties prop = new Properties();
 		FileInputStream fs = null;
-//		String browserName = "";
+		String browserName = "";
 
 		fs = new FileInputStream("/Users/mourin/eclipse-workspace/TvoLearn/src/main/java/resources/data.properties");
 
 		prop.load(fs);
 
-//		browserName = prop.getProperty("browser");
+		browserName = prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 

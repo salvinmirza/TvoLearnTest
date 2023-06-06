@@ -11,14 +11,14 @@ public class SubjectLandingPage {
 		
 	By subjectTitle = By.xpath("//*[@id='s-e235c8ce-c10f-42b3-b324-32da5f7e97f5']/div/h2");
 	
-	By resourceForLearningLinks = By.xpath("//*[@id='resources']");
+	By resourceForLearningLinks = By.xpath("//*[@class='resource_list']");
 
-	//Content not-found-header
-	By contentNotFoundHeader = By.xpath("//*[@id='block-system-main']/div/div[1]/h1");
 	
 	By email = By.xpath("//*[@id='mce-EMAIL']");
 	By subscribeBTN = By.xpath("//*[@id='mc-embedded-subscribe']");
-	By successMsg = By.xpath("//*[@id='mce-success-response']");
+	By generalErrorMsg =By.xpath("//div[contains(text(), 'Please enter a valid email address.')]");
+	By generalSuccessMsg = By.xpath("//div[contains(text(), 'Almost finished... We need to confirm your email address. To complete the subscription process, please click the link in the email we just sent you.')]");
+
 	
 	public SubjectLandingPage(WebDriver driver) {
 		this.driver=driver;
@@ -30,14 +30,11 @@ public class SubjectLandingPage {
 	
 	public List<WebElement> getResourceForLearningLinks() {
 		WebElement resourceForLearningLinkList =  driver.findElement(resourceForLearningLinks);
-		List<WebElement> videoLinks = resourceForLearningLinkList.findElements(By.tagName("li"));
+		List<WebElement> videoLinks = resourceForLearningLinkList.findElements(By.tagName("a"));
 		return videoLinks;
 	
 	}
 	
-	public WebElement getContentNotFoundHeader() {
-		return driver.findElement(contentNotFoundHeader);
-	}
 	
 	public WebElement getEmail() {
 		return driver.findElement(email);
@@ -47,7 +44,11 @@ public class SubjectLandingPage {
 		return driver.findElement(subscribeBTN);
 	}
 	
-	public WebElement getSuccessMsg() {
-		return driver.findElement(successMsg);
+	public WebElement getGeneralSuccessMsg() {
+		return driver.findElement(generalSuccessMsg);
+	}
+	
+	public WebElement getGeneralErrorMsg() {
+		return driver.findElement(generalErrorMsg);
 	}
 }
